@@ -16,7 +16,8 @@ object silvestre {
 
 	method image() = "silvestre.png"
 
-	method position() = game.at(3, 0)
+	method position() = game.at(self.xSegunPepita(), 0)
 
+	method xSegunPepita() = pepita.position().x().max(3)
 }
 
